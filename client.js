@@ -5,7 +5,7 @@ const connect = function () {
     host: '10.0.2.15',
     port: '50541'
   });
-
+// to setup a name for my snake
   conn.on('connect', () =>{
     conn.write("Name: Moe");
   })

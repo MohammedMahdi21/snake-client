@@ -1,11 +1,14 @@
 const net = require("net");
+
+
 // establishes a connection with the game server
 const connect = function () {
   const conn = net.createConnection({
     host: '10.0.2.15',
     port: '50541'
   });
-// to setup a name for my snake
+
+  // to setup a name for my snake
   conn.on('connect', () =>{
     conn.write("Name: Moe");
   })

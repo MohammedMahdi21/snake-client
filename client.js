@@ -6,6 +6,10 @@ const connect = function () {
     port: '50541'
   });
 
+  conn.on('connect', () =>{
+    conn.write("Name: Moe");
+  })
+
   // Update the connect function to handle incoming data and console.log it for the player.
   conn.on('data', (data) => {
     console.log('Server says: ', data);

@@ -11,12 +11,12 @@ const connect = function () {
   // to setup a name for my snake
   conn.on('connect', () =>{
     conn.write(PLAYER_NAME);
-  })
+  });
 
-// to display text, short chat bubbles
+  // to display text, short chat bubbles
   conn.on('connect', () =>{
     conn.write("Say: Hello All");
-  })
+  });
 
   // Update the connect function to handle incoming data and console.log it for the player.
   conn.on('data', (data) => {

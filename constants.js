@@ -4,7 +4,7 @@ const MOVE_UP_KEY = "Move: up";
 const MOVE_DOWN_KEY = "Move: down";
 const MOVE_LEFT_KEY = "Move: left";
 const MOVE_RIGHT_KEY = "Move: right";
-const PLAYER_NAME = "Name: Moe"
+const PLAYER_NAME = "Name: Moe";
 
 module.exports = {
   IP,

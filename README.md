@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["description: starting the game with name and message displayed to all players"](https://i.ibb.co/gmtDL9R/Screen-Shot-2022-04-23-at-5-14-30-PM.png)
+!["description: starting the game with name and message displayed to all players"](https://i.ibb.co/gmtDL9R/Screen-Shot-2022-04-23-at-5-14-30-PM.png"starting the game")
 !["description: snake get bigger for each point it collect"](https://i.ibb.co/RP2hMj0/Screen-Shot-2022-04-23-at-5-19-08-PM.png)
 
 

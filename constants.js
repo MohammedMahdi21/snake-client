@@ -1,4 +1,4 @@
-const IP = '10.0.2.15';
+const IP = 'localhost';
 const PORT = '50541';
 const MOVE_UP_KEY = "Move: up";
 const MOVE_DOWN_KEY = "Move: down";

@@ -13,7 +13,7 @@ const setupInput = function(conn) {
   return stdin;
 };
 
-// keyboard input 
+// keyboard input
 const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
@@ -34,6 +34,14 @@ const handleUserInput = function(key) {
   if (key === 'd') {
     connection.write(MOVE_RIGHT_KEY);
   }
+
+  // to display text, short chat bubbles
+  if (key === 'h') {
+    connection.write("Say: Hello All");
+  } else if (key === 'g') {
+    connection.write("Say: Good Luck :D");
+  }
+
 };
 
 module.exports = setupInput;

@@ -1,5 +1,5 @@
 const net = require("net");
-const {IP, PORT, PLAYER_NAME} = require("./constants");
+const { IP, PORT, PLAYER_NAME } = require("./constants");
 
 // establishes a connection with the game server
 const connect = function() {
@@ -8,15 +8,17 @@ const connect = function() {
     port: PORT
   });
 
-  // to setup a name for my snake
-  conn.on('connect', () =>{
+  // register a "connect" handler
+  conn.on('connect', () => {
+    // to print a message for the player
+    console.log("Successfully connected to game server");
+    // to setup a name for my snake
     conn.write(PLAYER_NAME);
   });
 
-  // to display text, short chat bubbles
-  conn.on('connect', () =>{
-    conn.write("Say: Hello All");
-  });
+
+
+
 
   // Update the connect function to handle incoming data and console.log it for the player.
   conn.on('data', (data) => {
